@@ -7,10 +7,16 @@ public class B5_LietKeCacSoNguyenToDoanAB {
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
-		for (int i = a; i <= b; i++) {
-			for (int j = i; j <= Math.sqrt(i); j++) {
-				if (i % j == 0) {
-					
+		if (b < 2)
+		{
+			
+		}
+		else {
+			for (int i = a; i <= b; i++) {
+				for (int j = i+1; j <= Math.sqrt(i); j++) {
+					if (i % j == 0) {
+						System.out.println();
+					}
 				}
 			}
 		}
